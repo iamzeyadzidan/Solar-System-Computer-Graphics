@@ -55,6 +55,12 @@ build CMakeFiles/GraphicsProject.dir/main.cpp.obj: CXX_COMPILER__GraphicsProject
   OBJECT_DIR = CMakeFiles\GraphicsProject.dir
   OBJECT_FILE_DIR = CMakeFiles\GraphicsProject.dir
 
+build CMakeFiles/GraphicsProject.dir/references/Lighting_Reference.cpp.obj: CXX_COMPILER__GraphicsProject_Debug D$:/CLionProjects/GraphicsProject/references/Lighting$ Reference.cpp || cmake_object_order_depends_target_GraphicsProject
+  DEP_FILE = CMakeFiles\GraphicsProject.dir\references\Lighting_Reference.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\GraphicsProject.dir
+  OBJECT_FILE_DIR = CMakeFiles\GraphicsProject.dir\references
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target GraphicsProject
@@ -63,9 +69,9 @@ build CMakeFiles/GraphicsProject.dir/main.cpp.obj: CXX_COMPILER__GraphicsProject
 #############################################
 # Link the executable GraphicsProject.exe
 
-build GraphicsProject.exe: CXX_EXECUTABLE_LINKER__GraphicsProject_Debug CMakeFiles/GraphicsProject.dir/main.cpp.obj
+build GraphicsProject.exe: CXX_EXECUTABLE_LINKER__GraphicsProject_Debug CMakeFiles/GraphicsProject.dir/main.cpp.obj CMakeFiles/GraphicsProject.dir/references/Lighting_Reference.cpp.obj
   FLAGS = -g
-  LINK_LIBRARIES = -lopengl32  -lglew32  -lfreeglut  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = -lopengl32  -lglew32  -lfreeglut  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\GraphicsProject.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
